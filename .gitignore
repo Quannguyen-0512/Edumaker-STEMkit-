@@ -1,0 +1,12 @@
+# OS clutter
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Proteus autosave/backup files (not meant for version control)
+*.pdsprj.DESKTOP-*
+Project Backups/
+
+# Arduino IDE
+*.hex
+build/
