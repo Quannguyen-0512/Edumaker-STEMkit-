@@ -2,9 +2,9 @@
 
 **Award:** 3rd Prize, SV.STARTUP national entrepreneurship competition.
 
-**Role:** Specified the board requirements (ESP32 S3, labeled sensor ports) and had a manufacturer turn that into an actual PCB. Designed and 3D printed the casing myself. Built and trained the companion chatbot myself.
+**Role:** Specified the board requirements (ESP32 S3, labeled sensor ports) and had a manufacturer turn that into an actual PCB. Milled the board on a desktop CNC with my teacher's help, since I wasn't experienced with that process myself. Designed and 3D printed the casing myself. Wrote the code and designed both sample projects (the remote control car and the smart home). Built and trained the companion chatbot myself.
 
-I built EduMaker STEMKit to make embedded systems approachable for students who've never soldered a wire or read a schematic before. Instead of one fixed circuit, I designed it as a set of snap together blocks (sensor, controller, display, AI unit) so a student can build a remote control car one week and a smart home the next, without needing to already know what they're doing.
+I built EduMaker STEMKit to help students learn programming and robotics through hands-on building instead of just theory. Instead of one fixed circuit, I designed it as a set of snap together blocks (sensor, controller, display, AI unit) that combine into different builds. I also built two sample projects, a remote control car and a smart home, so students have ready-made projects to learn from.
 
 ![Full kit overview](docs/images/full-kit-overview.png)
 
@@ -88,4 +88,6 @@ A board like Arduino has years of forum threads to fall back on when something b
 
 ## Future development
 
-Right now the chatbot runs on a general purpose model with my own training data layered on top, not something built specifically for embedded systems troubleshooting. I want to narrow that training data further once I see what questions students actually ask most.
+I want to keep improving the training data based on real feedback: once the kit is actually in students' hands (especially if it starts selling to more schools), I can see what they actually ask and where they get stuck, and update the prompt from that instead of guessing.
+
+I also want to keep building more sample projects, so students have a wider range of ready-made builds to learn from beyond the car and the smart home.
