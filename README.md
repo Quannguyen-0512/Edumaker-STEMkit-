@@ -65,7 +65,7 @@ A board like Arduino has years of forum threads to fall back on when something b
 * I built it on an existing AI model (through the Xiaozhi AI platform, running DeepSeek V4) rather than training one from scratch.
 * I trained it on data specific to this board (every port, every pin, what each one is normally used for) so it can actually help with *this* kit instead of answering generic embedded systems questions. The full reference data is in [`docs/pin-mapping.md`](docs/pin-mapping.md).
 * It's tuned to understand users speaking in a Mekong Delta / Southern Vietnamese accent, since that's who the kit is built for.
-* It runs as a voice assistant, so a student can just ask it something out loud instead of hunting for a forum thread that doesn't exist.
+* It runs as a voice assistant, so a student can just ask it something out loud.
 
 ## Repository layout
 
