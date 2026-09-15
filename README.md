@@ -66,6 +66,16 @@ A board like Arduino has years of forum threads to fall back on when something b
 * I trained it on data specific to this board (every port, every pin, what each one is normally used for) so it can actually help with *this* kit instead of answering generic embedded systems questions. The full reference data is in [`docs/pin-mapping.md`](docs/pin-mapping.md).
 * It's tuned to understand users speaking in a Mekong Delta / Southern Vietnamese accent, since that's who the kit is built for.
 * It runs as a voice assistant, so a student can just ask it something out loud.
+## Presentation 
+Video context: EduMaker STEM Kit introduction
+
+This clip is a short excerpt from a longer competition pitch presentation (SV STARTUP 2026) for the EduMaker STEM Kit.
+
+In this segment, I introduce the kit's two tiers: a Basic version (a bare circuit board with essential sensors, aimed at beginners learning wiring fundamentals) and a more advanced version that abstracts away the wiring so students can focus purely on programming. I also highlight a built-in AI chatbot, trained specifically on the kit's own technical data (modules, pin wiring, usage instructions) to give students 24/7 support.
+
+Watch the video here: 
+
+[![Watch the video](https://img.youtube.com/vi/ppT96pnb7yc/hqdefault.jpg)](https://youtu.be/ppT96pnb7yc)
 
 ## Repository layout
 
