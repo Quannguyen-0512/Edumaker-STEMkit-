@@ -20,8 +20,8 @@ unsigned long timer;
 //-------------------------------------------------------------------------------------------------------- Khởi tạo ngoại vi
 #define LAMP 47
 #define FAN 48
-#define GAS 14
-#define FIRE 13
+#define GAS 11
+#define FIRE 12
 #define BUZZE 21
 
 BLYNK_WRITE(V2){ digitalWrite(LAMP, param.asInt()); }
