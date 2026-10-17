@@ -83,9 +83,11 @@ A board like Arduino has years of forum threads to fall back on when something b
 
 ## Presentation
 
-This clip is a short excerpt from a longer competition pitch presentation (SV STARTUP 2026) for the EduMaker STEM Kit.
+## Presentation
 
-In this segment, I introduce the kit's two tiers: a Basic version (a bare circuit board with essential sensors, aimed at beginners learning wiring fundamentals) and a more advanced version that abstracts away the wiring so students can focus purely on programming. I also highlight a built-in AI chatbot with a knowledge base made from the kit's own technical data (modules, pin wiring, usage instructions) to give students 24/7 support.
+This clip is a short excerpt from a longer competition pitch presentation (SV.STARTUP 2026) for the EduMaker STEMKit.
+
+In this segment, I introduce the kit's two versions. The Starter version is a bare circuit board with its wires exposed, aimed at beginners learning wiring fundamentals. The Comfort version puts the same board in a 3D printed case that hides the wiring, so students who already know the hardware can focus on programming. I also highlight the built-in AI chatbot, which has a knowledge base made from the kit's own technical data (every port, every pin, and what each one is normally used for), so students can get help at any time.
 
 Watch the video here:
 
