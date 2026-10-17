@@ -2,7 +2,7 @@
 
 **Award:** 3rd Prize, SV.STARTUP national entrepreneurship competition.
 
-**Role:** Specified the board requirements (ESP32 S3, labeled sensor ports) and had a manufacturer turn that into an actual PCB. Milled the board on a desktop CNC with my teacher's help, since I wasn't experienced with that process myself. Designed and 3D printed the casing myself. Wrote the code and designed both sample projects (the remote control car and the smart home). Built and trained the companion chatbot myself.
+**Role:** Specified the board requirements (ESP32-S3, labeled sensor ports). My teacher and a third party supported the circuit side, designing the PCB and milling it on a desktop CNC. Designed and 3D printed the casing. Wrote the code and designed both sample projects. Built the companion Android app. Set up the companion chatbot on the Xiaozhi platform.
 
 I built EduMaker STEMKit to help students learn programming and robotics through hands-on building instead of just theory. Instead of one fixed circuit, I designed it as a set of snap together blocks (sensor, controller, display, AI unit) that combine into different builds. I also built two sample projects, a remote control car and a smart home, so students have ready-made projects to learn from.
 
