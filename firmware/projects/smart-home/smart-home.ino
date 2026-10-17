@@ -1,5 +1,3 @@
-
-
 //-------------------------------------------------------------------------------------------------------- Blynk
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
@@ -14,6 +12,11 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 DHT dht(5, DHT11);
 //-------------------------------------------------------------------------------------------------------- Biến toàn cục
 unsigned long timer; 
+//-------------------------------------------------------------------------------------------------------- Thông tin kết nối (thay bằng giá trị thật trên máy bạn, không đưa lên GitHub)
+#define MY_BLYNK_TOKEN  "YOUR_BLYNK_AUTH_TOKEN"
+#define MY_WIFI_SSID    "YOUR_WIFI_SSID"
+#define MY_WIFI_PASS    "YOUR_WIFI_PASSWORD"
+#define MY_BLYNK_SERVER "YOUR_BLYNK_SERVER"
 //-------------------------------------------------------------------------------------------------------- Khởi tạo ngoại vi
 #define LAMP 47
 #define FAN 48
@@ -42,19 +45,26 @@ void setup()
   lcd.setCursor(3,0); lcd.print("Hello, world!");
   delay(1000);
 //-------------------------------------------------------------------------------------------------------- Server connecting
-  Blynk.begin("gC_iZ2f-ibVtzkzkCQRYFupU5Vda9-jr", "Factory3", "39393939", "kenhsangtaotre.ddns.net", 8080);
+  Blynk.begin(MY_BLYNK_TOKEN, MY_WIFI_SSID, MY_WIFI_PASS, MY_BLYNK_SERVER, 8080);
   lcd.clear();
 }
 
 void loop() 
 {
-//-------------------------------------------------------------------------------------------------------- Đọc cảm biến
+  Blynk.run();
+//-------------------------------------------------------------------------------------------------------- Đọc gas và lửa
+  int gas_value = analogRead(GAS);
+  int fire_value = 4095-analogRead(FIRE);
+//-------------------------------------------------------------------------------------------------------- Detection
+  if(gas_value > 2000 || fire_value > 2000)
+  {
+    digitalWrite(BUZZE,1); delay(50);
+    digitalWrite(BUZZE,0); delay(50);
+  }
+//-------------------------------------------------------------------------------------------------------- Đọc nhiệt độ, độ ẩm
   float h = dht.readHumidity();
   float t = dht.readTemperature();
   if (isnan(h) || isnan(t)) {Serial.println(F("Failed to read from DHT sensor!"));return;}
-
-  int gas_value = analogRead(GAS);
-  int fire_value = 4095-analogRead(FIRE);
 //-------------------------------------------------------------------------------------------------------- Monitor
   lcd.setCursor(0,0); lcd.print("H:"); lcd.print(h); 
   lcd.setCursor(0,1); lcd.print("T:"); lcd.print(t); 
@@ -68,11 +78,5 @@ void loop()
     Blynk.virtualWrite(V4, gas_value);
     Blynk.virtualWrite(V5, fire_value);
     timer = millis();
-  }
-//-------------------------------------------------------------------------------------------------------- Detection
-  if(gas_value > 2000 || fire_value > 2000)
-  {
-    digitalWrite(BUZZE,1); delay(50);
-    digitalWrite(BUZZE,0); delay(50);
   }
 }
