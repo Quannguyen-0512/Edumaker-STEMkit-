@@ -18,6 +18,7 @@ I made two versions for two different stages of learning:
 | **Comfort** | Same board, 3D printed case | Students who already know the hardware and want to focus on the software |
 
 ![Sensor block modules](docs/images/sensor-block-modules.png)
+
 *What the sensor blocks look like taken apart*
 
 ## Hardware
