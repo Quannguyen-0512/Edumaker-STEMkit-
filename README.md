@@ -1,6 +1,6 @@
 # EduMaker STEMKit
 
-**Award:** 3rd Prize, SV.STARTUP national entrepreneurship competition.
+**Award:** 3rd Prize, Final Round, Students with Startup Ideas Competition (SV.STARTUP 2026).
 
 **Role:** Specified the board requirements (ESP32-S3, labeled sensor ports). My teacher and a third party supported the circuit side, designing the PCB and milling it on a desktop CNC. Designed and 3D printed the casing. Wrote the code and designed both sample projects. Built the companion Android app. Set up the companion chatbot on the Xiaozhi platform.
 
@@ -63,10 +63,9 @@ Code: [`smart-home.ino`](firmware/projects/smart-home/smart-home.ino)
 
 A board like Arduino has years of forum threads to fall back on when something breaks. A brand new kit has none of that, so I built a chatbot to cover that gap myself.
 
-* I built it on an existing AI model (through the Xiaozhi AI platform, running DeepSeek V4) rather than training one from scratch.
-* I trained it on data specific to this board (every port, every pin, what each one is normally used for) so it can actually help with *this* kit instead of answering generic embedded systems questions. The full reference data is in [`docs/pin-mapping.md`](docs/pin-mapping.md).
-* It's tuned to understand users speaking in a Mekong Delta / Southern Vietnamese accent, since that's who the kit is built for.
-* It runs as a voice assistant, so a student can just ask it something out loud.
+I built it on an existing AI model through the Xiaozhi AI platform rather than training one from scratch.
+
+I gave it a knowledge base specific to this board (every port, every pin, what each one is normally used for) so it can help with this kit instead of answering generic embedded systems questions. The full reference data is in docs/pin-mapping.md.
 ## Presentation 
 Video context: EduMaker STEM Kit introduction
 
